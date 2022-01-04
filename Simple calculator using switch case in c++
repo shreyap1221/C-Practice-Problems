@@ -1,0 +1,39 @@
+using namespace std;
+
+#include<iostream>
+
+int main(){
+  char op;
+  float a,b;
+
+  cout<<"Enter the first number: \n";
+  cin>>a;
+
+  cout<<"Enter the operator(+,-,*,/): \n";
+  cin>>op;
+
+  cout<<"Enter the second number: \n";
+  cin>>b;
+
+  switch (op)
+  {
+  case '+':
+  cout<< a << "+" << b <<"=" << a+b;
+    break;
+  case '-':
+  cout<< a << "-" << b <<"=" << a-b;
+   break;
+
+  case '*':
+  cout<< a << "*" << b <<"=" << a*b;
+   break;
+
+  case '/':
+  cout<< a << "/" << b <<"=" << a/b;
+  break; 
+  
+  default:
+  cout<<"Operator entered is wrong!!";
+    break;
+  }
+}
